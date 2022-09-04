@@ -36,7 +36,7 @@ I've run an open network (SSID [openwireless.org](https://openwireless.org)) in 
 
 In Berkeley, we got _lots_ of users, even some consistent ones. I think this really helped out our cash-strapped student neighbors. We had gigabit fiber so we never noticed any service degredation even without any QoS rules. I also tunneled the guest traffic over [Mullvad VPN](https://mullvad.net/en/) (details on how to do this are below).
 
-In San Francisco, I seldom get any users. &#x1F625; This is probably because my neighbors have their own networks. So they have no need for open wireless. I still run it just in case they need a backup if their internet goes down or for any passersby on the street.
+In San Francisco, I seldom get any users. &#x1F625; This is probably because my neighbors have their own networks. I still run it in case they need a backup if their internet goes down or for any passersby on the street.
 
 # Tech details
 
