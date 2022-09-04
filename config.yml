@@ -1,0 +1,39 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Nicolas Chan
+theme: "PaperMod"
+
+enableRobotsTXT: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  defaultTheme: auto
+  math: true
+  showtoc: true
+  homeInfoParams:
+    Title: "Nicolas Chan's Personal Blog"
+    Content: >
+      - Software engineer
+  socialIcons:
+    - name: github
+      url: "https://github.com/nicolaschan"
+    - name: cv
+      url: "/files/resume-2022.pdf"
+
+menu:
+  main:
+    - identifier: about
+      name: About Me
+      url: /about/
+      weight: 10
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
