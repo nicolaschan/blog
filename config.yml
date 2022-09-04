@@ -16,12 +16,12 @@ params:
   homeInfoParams:
     Title: "Nicolas Chan's Personal Blog"
     Content: >
-      - Software engineer
+      - Software engineering and whatever else I might do
   socialIcons:
     - name: github
       url: "https://github.com/nicolaschan"
     - name: cv
-      url: "/files/resume-2022.pdf"
+      url: "/static/docs/resume-2022.pdf"
 
 menu:
   main:
