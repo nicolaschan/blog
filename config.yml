@@ -22,7 +22,7 @@ params:
   homeInfoParams:
     Title: "Nicolas Chan's Personal Blog"
     Content: >
-      - Software engineering and whatever else I might do
+      - Software engineering, self hosting, and anything else on my mind
   socialIcons:
     - name: github
       url: "https://github.com/nicolaschan"
