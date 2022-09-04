@@ -12,7 +12,7 @@ I started using [the Dvorak keyboard layout](https://en.wikipedia.org/wiki/Dvora
 
 - My Qwerty speed has degraded since peak, but not terribly. My Qwerty speed is around 70 WPM. This is good considering how rarely I use it.
 
-- I love Vim keybindings, but my muscle memory is for _Dvorak_ Vim bindings. In Qwerty, the Vim movement keys are all together: `HJKL`. In Dvorak, this would be the on the physical Qwerty keys labeled `JCVP`. By pure coincidence, this works out to be fine since the `C-V` keys are Down-Up and `J-P` are Left-Right. It's not how Vim was intended but it works well enough for me.
+- I love Vim keybindings but my muscle memory is for _Dvorak_ Vim bindings. In Qwerty, the Vim movement keys are all together: `HJKL`. In Dvorak, this would be the on the physical Qwerty keys labeled `JCVP`. By pure coincidence, this works out to be fine since the `C-V` keys are Down-Up and `J-P` are Left-Right. It's not how Vim was intended but it works well enough for me.
 
 - I'm a touch typist so there is no need to relabel the keys. After typing a lot of $\LaTeX$, I have memorized the locations of most special characters.
 
