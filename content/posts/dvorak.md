@@ -4,7 +4,7 @@ date: 2022-09-03T23:08:48-07:00
 tags: ["typing"]
 ---
 
-I started using Dvorak in middle school. Here are my thoughts as a full-time Dvorak typist ten years later.
+I started using [the Dvorak keyboard layout](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout) in middle school. Here are my thoughts as a full-time Dvorak typist ten years later.
 
 ## Observations
 
