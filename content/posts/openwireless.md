@@ -6,7 +6,7 @@ tags: ["self-hosting", "networking"]
 
 I don't have a password on my WiFi.
 
-The internet is the 21<sup>st</sup> century library. Everyone should have access to a public library. Similarly, everyone should have access to public internet. I have more bandwidth available than I need. Sharing my extra bandwidth is the neighborly thing to do. For more details, [openwireless.org](https://openwireless.org) aligns with my views.
+The internet is the 21<sup>st</sup> century library. Everyone should have access to a public library. Similarly, everyone should have access to public internet. I have more bandwidth available than I need, so sharing my extra bandwidth is the neighborly thing to do. For more details, [openwireless.org](https://openwireless.org) aligns with my views.
 
 # Isn't that _dangerous_?
 
