@@ -38,7 +38,7 @@ In Berkeley, we got _lots_ of users, even some consistent ones. I think this rea
 
 In San Francisco, I seldom get any users. &#x1F625; This is probably because my neighbors have their own networks. I still run it in case they need a backup if their internet goes down or for any passersby on the street.
 
-# Tech details
+# Routing guests over VPN
 
 I have a [Ubiquiti EdgeRouter-12](https://store.ui.com/collections/operator-isp-infrastructure/products/edgerouter-12) and [U6 Long Range](https://store.ui.com/products/u6-lr-us).
 
@@ -66,6 +66,20 @@ interfaces {
             }
             private-key /config/auth/mullvad/priv.key
             route-allowed-ips false
+        }
+    }
+}
+```
+
+Also enable masquerade from the Mullvad interface so guests can send traffic through it.
+```
+service {
+    nat {
+        rule 5001 {
+            description "masquerade for mullvad (wg1)"
+            log disable
+            outbound-interface wg1
+            type masquerade
         }
     }
 }
