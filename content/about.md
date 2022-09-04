@@ -10,6 +10,8 @@ I'm a software engineer based in San Francisco. I studied computer science and m
 
 On this blog I intend to share whatever comes to mind. There is no schedule or goal here, just writing for fun!
 
-# Contact
+## Contact
 
 - Email: [blog@nicolaschan.com](mailto:blog@nicolaschan.com)
+- [2022 Resume](/static/docs/resume-2022.pdf)
+- PGP: 8DBC0513271A2454FC337F304CFAEA5126A70C2A
