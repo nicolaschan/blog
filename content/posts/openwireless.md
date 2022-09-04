@@ -1,7 +1,6 @@
 ---
 title: "Open Wireless"
-date: 2022-09-04T10:14:47-07:00
-draft: true
+date: 2022-09-04T13:06:21-07:00
 tags: ["self-hosting", "networking"]
 ---
 
