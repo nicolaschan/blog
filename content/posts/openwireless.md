@@ -10,7 +10,7 @@ The internet is the 21<sup>st</sup> century library. Everyone should have access
 
 # Isn't that _dangerous_?
 
-Most tech savvy people will say you need a password on your WiFi. There are some risks but we can manage them:
+There are some risks but we can manage them:
 
 1. **Traffic on an open network is unencrypted.** 
 
