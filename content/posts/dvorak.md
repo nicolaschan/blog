@@ -10,7 +10,7 @@ I started using [the Dvorak keyboard layout](https://en.wikipedia.org/wiki/Dvora
 
 - I'm not much faster than my peak Qwerty speed, if at all (&asymp;110 WPM). This isn't super fast, but my typing speed usually exceeds my thinking speed so it's enough for me.
 
-- My Qwerty speed has degraded since peak, but not terribly. My Qwerty speed is around 70 WPM. This is good considering how rarely I use it.
+- My Qwerty speed has degraded (currently around 70 WPM) since peak (>100 WPM). This is not bad considering how rarely I use it.
 
 - I love Vim keybindings but my muscle memory is for _Dvorak_ Vim bindings. In Qwerty, the Vim movement keys are all together: `HJKL`. In Dvorak, this would be the on the physical Qwerty keys labeled `JCVP`. By pure coincidence, this works out to be fine since the `C-V` keys are Down-Up and `J-P` are Left-Right. It's not how Vim was intended but it works well enough for me.
 
@@ -36,7 +36,7 @@ I started using [the Dvorak keyboard layout](https://en.wikipedia.org/wiki/Dvora
 
 Do the pros outweigh the cons? Just barely. The pros are not very strong but neither are the cons. Dvorak feels more ergonomic, so I wouldn't switch back to Qwerty.
 
-If I were to have to make the choice again, I'd still choose Dvorak to be special. &#x1F643;
+If I were to make the choice again, I'd still choose Dvorak to be special. &#x1F643;
 
 [^1]: On Mac, this is "Dvorak - Qwerty &#x2318;"
 [^2]: This is also an internationalization issue. Use something like [key code](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code) if you rely on physical key layout.
