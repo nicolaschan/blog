@@ -22,3 +22,7 @@
     });
 </script>
 {{ end }}
+
+{{ if or .Params.umami .Site.Params.umami }}
+<script async defer data-website-id="43e00a65-0040-463c-b90f-038e7af2f918" src="https://stats.intranet.lol/umami.js"></script>
+{{ end }}

@@ -27,6 +27,7 @@ params:
   showCodeCopyButtons: true
   showtoc: true
   showRssButtonInSectionTermList: true
+  umami: true
   homeInfoParams:
     Title: "Nicolas Chan's Blog"
     Content: >
