@@ -4,6 +4,8 @@ date: 2022-10-09T22:26:08-07:00
 tags: ["kubernetes", "self-hosting", "zigbee"]
 ---
 
+[![Colored lights controlled by Kubernetes](/static/img/lights.jpg)](/static/img/lights.jpg)
+
 In my apartment I control my lights using [Zigbee2MQTT](https://www.zigbee2mqtt.io/), [Mosquitto (MQTT)](https://mosquitto.org/man/mqtt-7.html), and [openHAB](https://www.openhab.org/) all running on Kubernetes. Here's the how and why for this over-engineered nonsense.
 
 # But why?
