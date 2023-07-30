@@ -1,7 +1,7 @@
 ---
-title: "Google Bans for Using NextAuth's Sign In Page"
+title: "Google Chrome Blocks Entire Domain over NextAuth Defaults"
 date: 2023-07-29T22:05:43-07:00
-tags: ["antitrust"]
+tags: ["nextauth", "bell"]
 ---
 
 # Summary
@@ -17,7 +17,13 @@ Google is falsely flagging [NextAuth](https://next-auth.js.org/)'s default sign 
 
 Today Google Chrome blocked my domain `bell.plus` and all of its subdomains for "phishing" due to the NextAuth default sign in page. This is a website I run for free to help students with their schedules. Signing in is optional and only needed if you want to share a schedule.
 
-The "phishing" page is the default NextAuth sign in page. It is simply a list of buttons to use to sign in with a provider. There is no deception because when a user clicks a provider they are taken to the provider's website and asked to consent to sharing their identity with this third party. In fact, this sign in page appears on `edit.<domain>`, but _all_ subdomains are blocked by Google Chrome.
+According to the Google Search console, the "phishing" page is the default NextAuth sign in page: 
+
+[![Google Search Console report](/static/img/search-console.png)](/static/img/search-console.png)
+
+It is simply a list of buttons to use to sign in with a provider. There is no deception because when a user clicks a provider they are taken to the provider's website and asked to consent to sharing their identity with this third party. In fact, this sign in page appears on `edit.<domain>`, but _all_ subdomains are blocked by Google Chrome.
+
+[![NextAuth default sign in page](/static/img/nextauth.png)](/static/img/nextauth.png)
 
 A quick search shows that this is a recurring pattern with the NextAuth default sign in page:
 - [Google reports NextAuth api page site as phishing/social engineering](https://github.com/nextauthjs/next-auth/discussions/7465)
