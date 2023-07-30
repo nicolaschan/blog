@@ -6,12 +6,12 @@ tags: ["nextauth", "bell"]
 
 # Summary
 
-Google is falsely flagging [NextAuth](https://next-auth.js.org/)'s default sign in page as phishing. NextAuth is a popular auth library for Next.js. This will get your entire domain, including all subdomains, blocked by Google Chrome. Here is my recommendation:
+Google is falsely flagging [NextAuth](https://next-auth.js.org/)'s default sign in page as phishing. NextAuth is a popular auth library for Next.js. This will get your entire domain, including all subdomains, blocked by Google Chrome for "phishing." Here is my recommendation:
 
 - If you use NextAuth on your website, immediately stop using the default sign in page.
 - Help [report an incorrect phishing warning](https://safebrowsing.google.com/safebrowsing/report_error/?url=https%3A%2F%2Fedit.bell.plus%2Fapi%2Fauth%2Fsignin%3FcallbackUrl%3D%2Fschools&hl=en-US).
 - Spread the word! Google needs to patch this before more innocent sites are banned.
-- Consider using another browser other than Google Chrome.
+- Consider using another browser other than Google Chrome or Firefox, which also uses the Google block list.
 
 # What happened
 
