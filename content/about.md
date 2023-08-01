@@ -10,7 +10,7 @@ I'm a software engineer in San Francisco. Currently I work at Microsoft on [Yamm
 
 I studied computer science and mathematics at UC Berkeley (class of '21). I spent much of my time working at [UC Berkeley's Savio Supercomputer](https://docs-research-it.berkeley.edu/services/high-performance-computing/overview/). I also dabbled in program synthesis for undergrad research. 
 
-Outside of work, I enjoy playing piano, hobby coding on [GitHub](https://github.com/nicolaschan), biking, and swimming in the bay. On this blog I intend to share whatever comes to mind. There is no schedule or goal here, just writing for fun!
+Outside of work, I enjoy playing piano, hobby coding on [GitHub](https://github.com/nicolaschan), and swimming in the bay. You'll find me . On this blog I intend to share whatever comes to mind. There is no schedule or goal here, just writing for fun!
 
 ## Contact
 
