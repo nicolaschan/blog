@@ -1,12 +1,12 @@
 ---
-title: "Google Chrome Blocks Entire Domain over NextAuth Defaults"
+title: "Google Blocks Entire Domain over NextAuth Defaults"
 date: 2023-07-29T22:05:43-07:00
 tags: ["nextauth", "bell"]
 ---
 
-# Summary
+> **Update**: After I requested review using the search console on July 29, 2023, Google sent an email on August 1, 2023 saying that "bell.plus no longer contains links to harmful sites or downloads. The warnings visible to users are being removed from your site." I am still worried the issue with the NextAuth default sign in page persists. It's unclear whether this was a manual review or automated scan.
 
-> **Update August 2, 2023**: Google sent an email yesterday August 1, 2023 saying that they have processed the security review request I had submitted on July 29, 2023. The email says that "bell.plus no longer contains links to harmful sites or downloads. The warnings visible to users are being removed from your site." While I'm glad that the warnings are being removed, I am still worried that the issue described below persists. I had removed the NextAuth default login page and replaced it with my own. It's unclear to me whether this was a manual review or if their scan no longer found that page.
+# Summary
 
 Google is falsely flagging [NextAuth](https://next-auth.js.org/)'s default sign in page as phishing. NextAuth is a popular auth library for Next.js. This will get your entire domain, including all subdomains, blocked by Google Chrome for "phishing." Here is my recommendation:
 
