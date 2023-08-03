@@ -6,12 +6,14 @@ tags: ["nextauth", "bell"]
 
 # Summary
 
+> **Update August 2, 2023**: Google sent an email yesterday August 1, 2023 saying that they have processed the security review request I had submitted on July 29, 2023. The email says that "bell.plus no longer contains links to harmful sites or downloads. The warnings visible to users are being removed from your site." While I'm glad that the warnings are being removed, I am still worried that the issue described below persists. I had removed the NextAuth default login page and replaced it with my own. It's unclear to me whether this was a manual review or if their scan no longer found that page.
+
 Google is falsely flagging [NextAuth](https://next-auth.js.org/)'s default sign in page as phishing. NextAuth is a popular auth library for Next.js. This will get your entire domain, including all subdomains, blocked by Google Chrome for "phishing." Here is my recommendation:
 
 - If you use NextAuth on your website, immediately stop using the default sign in page.
 - Help [report an incorrect phishing warning](https://safebrowsing.google.com/safebrowsing/report_error/?url=https%3A%2F%2Fedit.bell.plus%2Fapi%2Fauth%2Fsignin%3FcallbackUrl%3D%2Fschools&hl=en-US).
 - Spread the word! Google needs to patch this before more innocent sites are banned.
-- Consider using a browser other than Google Chrome or Firefox (use the Google block list).
+- Consider using a browser other than Google Chrome or Firefox (both use the Google block list).
 
 # What happened
 
