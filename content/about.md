@@ -15,5 +15,5 @@ Outside of work, I enjoy hobby coding on [GitHub](https://github.com/nicolaschan
 ## Contact
 
 - Email: [blog@nicolaschan.com](mailto:blog@nicolaschan.com)
-- [2024 Resume](/static/docs/resume-2024.pdf)
+- [2025 Resume](/static/docs/resume-2025.pdf)
 - PGP: 8DBC0513271A2454FC337F304CFAEA5126A70C2A
