@@ -38,7 +38,7 @@ params:
     - name: Keybase
       url: "https://keybase.io/nicolaschan"
     - name: CV 
-      url: "/static/docs/resume-2025.pdf"
+      url: "/static/docs/resume.pdf"
     - name: RSS
       url: "/index.xml"
 
