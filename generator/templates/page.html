@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block body_class %}post-page{% endblock %}
+
+{% block title %}{{ page.title }} — {{ site.name }}{% endblock %}
+{% block description %}{{ page.excerpt }}{% endblock %}
+
+{% block header %}
+<header>
+    <h1 class="site-title"><a href="{{ path_prefix }}">{{ site.name }}</a></h1>{% include "nav.html" %}
+</header>
+{% endblock %}
+
+{% block content %}
+<article class="post">
+    {% match page.cover_image %}
+    {% when Some with (img) %}
+    <header class="post-header post-header-hero" style="background-image: url('{{ img }}');">
+        <div class="post-header-overlay">
+            {% if page.has_date() %}<time class="post-date">{{ page.formatted_date() }}</time>{% endif %}
+            <h1 class="post-title"><a class="title-link" href=".">{{ page.title }}</a></h1>
+            {% if !page.tags.is_empty() %}
+            <div class="post-tags">
+                {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </header>
+    {% when None %}
+    <header class="post-header">
+        {% if page.has_date() %}<time class="post-date">{{ page.formatted_date() }}</time>{% endif %}
+        <h1 class="post-title"><a class="title-link" href=".">{{ page.title }}</a></h1>
+        {% if !page.tags.is_empty() %}
+        <div class="post-tags">
+            {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
+    </header>
+    {% endmatch %}
+    <div class="post-content">
+        {{ page.content_html|safe }}
+    </div>
+</article>
+{% endblock %}

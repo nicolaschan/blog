@@ -1,0 +1,10 @@
+<li class="post-item">
+    <a href="{{ path_prefix }}posts/{{ post.slug }}/" class="post-link">
+        <time class="post-date">{{ post.formatted_date() }}</time>
+        <h2 class="post-title">{{ post.title }}</h2>
+        <p class="post-excerpt">{{ post.excerpt }}</p>
+        <div class="post-tags">
+            {% for tag in post.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+    </a>
+</li>

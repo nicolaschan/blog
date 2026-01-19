@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ site.name }} — {{ site.tagline }}{% endblock %}
+
+{% block header %}
+<header>
+    <h1 class="site-title"><a href="{{ path_prefix }}">{{ site.name }}</a></h1>
+    <p class="site-description">{{ site.description }}</p>
+    {% include "nav.html" %}
+</header>
+{% endblock %}
+
+{% block content %}
+<ul class="posts-list">
+    {% for post in posts %}
+    {% include "post_item.html" %}
+    {% endfor %}
+</ul>
+{% endblock %}
