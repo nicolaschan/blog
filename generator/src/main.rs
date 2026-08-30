@@ -8,37 +8,42 @@ use std::fs;
 use std::path::Path;
 use walkdir::WalkDir;
 
+fn copy_dir(src_dir: &Path, dest_dir: &Path) {
+    if !src_dir.exists() {
+        return;
+    }
+    for entry in WalkDir::new(src_dir)
+        .into_iter()
+        .filter_map(|e| e.ok())
+        .filter(|e| e.path().is_file())
+    {
+        let relative_path = entry.path().strip_prefix(src_dir).unwrap();
+        let dest_path = dest_dir.join(relative_path);
+
+        if let Some(parent) = dest_path.parent() {
+            fs::create_dir_all(parent).expect("Failed to create destination subdirectory");
+        }
+
+        fs::copy(entry.path(), &dest_path).expect("Failed to copy file");
+        println!("Copied: {}", dest_path.display());
+    }
+}
+
 fn main() {
     let site = SiteConfig::default();
-    
+
     let content_dir = Path::new("../content/posts");
     let pages_dir = Path::new("../content/pages");
     let resources_dir = Path::new("../content/resources");
+    let root_dir = Path::new("../content/root");
     let output_dir = Path::new("../dist");
 
     // Create output directories
     fs::create_dir_all(output_dir.join("posts")).expect("Failed to create output directory");
     fs::create_dir_all(output_dir.join("resources")).expect("Failed to create resources directory");
 
-    // Copy resources (images, etc.)
-    if resources_dir.exists() {
-        for entry in WalkDir::new(resources_dir)
-            .into_iter()
-            .filter_map(|e| e.ok())
-            .filter(|e| e.path().is_file())
-        {
-            let relative_path = entry.path().strip_prefix(resources_dir).unwrap();
-            let dest_path = output_dir.join("resources").join(relative_path);
-            
-            // Create parent directories if needed
-            if let Some(parent) = dest_path.parent() {
-                fs::create_dir_all(parent).expect("Failed to create resource subdirectory");
-            }
-            
-            fs::copy(entry.path(), &dest_path).expect("Failed to copy resource");
-            println!("Copied: {}", dest_path.display());
-        }
-    }
+    copy_dir(resources_dir, &output_dir.join("resources"));
+    copy_dir(root_dir, output_dir);
 
     // Collect all posts
     let mut posts: Vec<Post> = Vec::new();
